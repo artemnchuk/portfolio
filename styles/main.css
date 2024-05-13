@@ -155,11 +155,13 @@ nav ul li a:active {
 
 .intro-buttons .btn:hover {
   background-color: #ff5a47;
-  border-color: #ffffff;
+  border-color: var(--text-color);
+  box-shadow: 4px 4px 15px #ff0000d2;
 }
 .intro-buttons .btn:active {
   background-color: #ff0000;
-  border-color: #ffffff;
+  border-color: var(--text-color);
+  box-shadow: 5px 5px 50px #ff0000d2;
 }
 
 .container {
@@ -219,8 +221,14 @@ h3 {
 .skills-icons img {
   width: 40px;
   height: 40px;
+  transition: all 0.5s ease;
 }
-
+.skills-icons img:hover {
+  box-shadow: 5px 5px 20px rgba(141, 141, 141, 0.562);
+  border-radius: 10px;
+  transform: scale(1.2);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .works-section {
   padding: 4rem 0;
   height: 90vh;
@@ -324,9 +332,14 @@ form button {
 form button:hover {
   background-color: #ff0000;
 }
+footer {
+  box-shadow: 0 0 40px rgba(141, 141, 141, 0.3);
+  border-radius: 30px;
+}
 footer h2 {
   text-align: center;
   font-size: 18px;
+  margin: 0;
 }
 footer a {
   text-decoration: none;
