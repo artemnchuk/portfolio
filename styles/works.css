@@ -1,17 +1,16 @@
-
-
 /* Works Archive Grid */
-.works-archive {
+.project-archive {
   padding: 40px;
 }
 
-.works-grid {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.work-item {
+.project-item {
+  width: 100%;
   background-color: var(--bg-color);
   border-radius: 10px;
   overflow: hidden;
@@ -19,23 +18,23 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.work-item img {
+.project-item img {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
 
-.work-info {
+.project-info {
   padding: 20px;
   text-align: left;
 }
 
-.work-info h3 {
+.project-info h3 {
   margin-bottom: 10px;
   font-size: 1.5em;
 }
 
-.work-info p {
+.project-info p {
   margin-bottom: 15px;
   font-size: 1em;
 }
@@ -60,7 +59,7 @@
   color: #e91e63;
 }
 
-.work-item:hover {
+.project-item:hover {
   transform: scale(1.05);
 }
 
@@ -73,5 +72,4 @@ footer {
 
 footer i {
   color: red;
-} */
-/*  */
+}
