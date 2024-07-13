@@ -3,24 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artem_website</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <title>Protfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f637c4f7db.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2></h2>
-      <div>
-        <h2>hi there</h2>
+    <header>
+      <div class="logo">Artem Nazarchuk</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
-    </main>
-    <footer></footer>
+
+      <div class="intro-text">
+        <h1>Hi! I'm - <span> DevNazarchuk !</span></h1>
+        <p>
+          I'm a Artem Nazarchuk developer with a passion for building beautiful
+          and functional websites. If you are looking for a developer for hire,
+          I am just one contact form away.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn">Resume</a>
+          <a href="#" class="btn">Contact</a>
+        </div>
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="container">
+        <h2>About <span class="highlight">Me</span></h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="media/images/girl-with-book.png" alt="Developer Image" />
+          </div>
+          <div class="about-text">
+            <p>
+              Greetings! I'm <span class="highlight">Artem Nazarchuk</span>, a
+              dedicated frontend developer driven by my love for crafting fully
+              responsive and user-centric websites. My expertise lies in
+              frontend technologies, including
+              <span class="highlight">HTML</span>,
+              <span class="highlight">CSS</span>, and
+              <span class="highlight">JavaScript</span>. Currently, I'm deeply
+              engaged with <span class="highlight">React</span>,
+              <span class="highlight">Next.js</span>, and
+              <span class="highlight">TypeScript</span>, pushing the boundaries
+              of what can be achieved. I maintain a perpetual commitment to
+              honing my skills and keeping pace with the ever-evolving landscape
+              of industry trends.
+            </p>
+          </div>
+        </div>
+        <h3>Skills</h3>
+        <div class="skills-icons">
+          <img src="media/icons/html.png" alt="HTML5" />
+          <img src="media/icons/css.png" alt="CSS3" />
+          <img src="media/icons/js.png" alt="JavaScript" />
+          <img src="media/icons/typescript.png" alt="TypeScript" />
+          <img src="media/icons/" alt="Next.js" />
+          <img src="media/icons/react.png" alt="React" />
+          <img src="media/icons/sass.png" alt="Sass" />
+          <img src="media/icons/html.png" alt="Gulp" />
+          <img src="media/icons/figma.png" alt="Figma" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
