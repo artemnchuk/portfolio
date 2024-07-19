@@ -33,3 +33,78 @@ nav ul li a {
   text-decoration: none;
   font-size: 16px;
 }
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.social-links {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links a {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.social-links a:hover {
+  background-color: #fff;
+}
+.social-links i {
+  color: white;
+  font-size: 30px;
+}
+.social-links i:hover {
+  transition: 0.1s;
+  color: #000;
+}
+.intro-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.intro-text h1 span {
+  color: #da0707;
+}
+
+.intro-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons .btn {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.buttons .btn:hover {
+  background-color: #e64c3c;
+  border-color: #e64c3c;
+}
