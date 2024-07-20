@@ -108,3 +108,57 @@ nav ul li a {
   background-color: #e64c3c;
   border-color: #e64c3c;
 }
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin: 2rem 0 1rem;
+}
+
+.highlight {
+  color: #da0707;
+}
+
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  font-size: 18px;
+  max-width: 50%;
+}
+.about-image {
+  max-width: 500px;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.skills-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.skills-icons img {
+  width: 50px;
+  height: 50px;
+}
