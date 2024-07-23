@@ -33,6 +33,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 16px;
 }
+
 .intro {
   display: flex;
   justify-content: center;
@@ -108,6 +109,7 @@ nav ul li a {
   background-color: #e64c3c;
   border-color: #e64c3c;
 }
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -162,6 +164,7 @@ h3 {
   width: 50px;
   height: 50px;
 }
+
 .works-section,
 .contact-section {
   padding: 4rem 0;
@@ -211,6 +214,7 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+
 form {
   width: 50%;
   display: flex;
