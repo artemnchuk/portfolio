@@ -89,14 +89,15 @@ nav ul li a {
   margin-bottom: 30px;
 }
 
-.buttons {
+.intro-buttons {
   display: flex;
   justify-content: center;
 }
 
-.buttons .btn {
+.intro-buttons .btn {
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid rgb(150, 150, 150);
+  border-radius: 10px;
   padding: 10px 20px;
   margin: 0 10px;
   text-transform: uppercase;
@@ -105,9 +106,13 @@ nav ul li a {
   font-size: 16px;
 }
 
-.buttons .btn:hover {
-  background-color: #e64c3c;
-  border-color: #e64c3c;
+.intro-buttons .btn:hover {
+  background-color: #ff5a47;
+  border-color: #ffffff;
+}
+.intro-buttons .btn:active {
+  background-color: #ff0000;
+  border-color: #ffffff;
 }
 
 .container {
