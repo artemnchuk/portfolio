@@ -35,7 +35,7 @@ body {
   color: #373737;
   background: #f7f7f7;
 }
-header:after,
+/* header:after,
 .container:after,
 footer:after,
 .widget-posts-list li:after,
@@ -43,4 +43,4 @@ footer:after,
   content: "";
   display: table;
   clear: both;
-}
+} */
