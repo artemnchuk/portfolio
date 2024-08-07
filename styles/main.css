@@ -185,7 +185,6 @@ h3 {
 
 .works-section,
 .contact-section {
-  height: 100vh;
   padding: 4rem 0;
 }
 
@@ -253,16 +252,23 @@ form textarea {
 form button {
   padding: 1rem;
   border-radius: 5px;
-  background-color: #ff0077;
+  background-color: #f34848;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #ff3399;
+  background-color: #ff0000;
 }
 footer h2 {
   text-align: center;
   font-size: 18px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.fa-heart {
+  color: red;
 }
