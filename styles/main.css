@@ -282,3 +282,7 @@ footer a {
 .fa-heart {
   color: red;
 }
+.fa-instagram:before,
+.fa-linkedin-in:before {
+  margin-left: 2.5px;
+}
