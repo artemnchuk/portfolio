@@ -286,3 +286,59 @@ footer a {
 .fa-linkedin-in:before {
   margin-left: 2.5px;
 }
+/* */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#theme-btn {
+  margin-left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  outline: none;
+}
+
+#theme-icon {
+  transition: all 0.5s ease;
+}
+
+#theme-icon.fa-sun {
+  color: orange;
+}
+
+#theme-icon.fa-moon {
+  color: white;
+}
+
+/*  */
+#theme-icon.fa-sun:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); /**/
+  transform: rotate(360deg);
+}
+
+#theme-icon.fa-moon:hover {
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.7);
+  transform: translateY(-5px);
+}
+
+/* light */
+.light-theme {
+  --bg-color: white;
+  --text-color: black;
+}
+
+/* dark */
+.dark-theme {
+  --bg-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color;
+}
