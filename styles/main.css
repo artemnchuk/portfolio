@@ -1,16 +1,28 @@
-body {
-  font-family: "Quicksand", "Open Sans", "Roboto", sans-serif;
-  background-color: #000;
-  color: white;
-  line-height: 1.6;
+/* light */
+.light-theme {
+  --bg-color: white;
+  --text-color: black;
 }
 
+/* dark */
+.dark-theme {
+  --bg-color: black;
+  --text-color: white;
+}
+
+body {
+  font-family: "Quicksand", "Open Sans", "Roboto", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color;
+  line-height: 1.6;
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #111;
+  background-color: var(--bg-color);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -22,7 +34,7 @@ header {
 header .logo {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
 }
 
 nav ul {
@@ -35,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -77,15 +89,15 @@ nav ul li a:hover {
 }
 
 .social-links i {
-  color: white;
+  color: var(--text-color);
   font-size: 30px;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover,
 .social-links a:hover i {
-  color: #000000;
-  background-color: #fff;
+  color: var(--text-color);
+  background-color: var(--text-color);
   transition: color 0.3s ease;
   transition: background-color 0.3s ease;
 }
@@ -122,7 +134,7 @@ nav ul li a:hover {
   margin: 0 10px;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: var(--bg-color);
   font-size: 16px;
 }
 
@@ -203,7 +215,8 @@ h3 {
 
 .work-item {
   width: 30%;
-  background-color: #222;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
@@ -224,9 +237,9 @@ h3 {
 }
 
 .contact-section {
-  background-color: #111;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   padding: 4rem 0;
-  color: white;
 }
 .contact-container {
   width: 90%;
@@ -254,16 +267,17 @@ form textarea {
   padding: 1rem;
   border-radius: 5px;
   border: none;
-  background-color: #333;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--bg-color);
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 form button {
   padding: 1rem;
   border-radius: 5px;
   background-color: #f34848;
-  color: white;
+  color: var(--text-color);
   border: none;
   cursor: pointer;
 }
@@ -277,7 +291,7 @@ footer h2 {
 }
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
 }
 .fa-heart {
   color: red;
@@ -294,7 +308,7 @@ footer a {
 }
 
 #theme-btn {
-  margin-left: 15px;
+  margin-left: 5px;
   background: none;
   border: none;
   cursor: pointer;
@@ -316,29 +330,11 @@ footer a {
 
 /*  */
 #theme-icon.fa-sun:hover {
-  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); /**/
+  box-shadow: 0 0 15px 5px rgba(255, 217, 0, 0.644); /**/
   transform: rotate(360deg);
 }
 
 #theme-icon.fa-moon:hover {
   box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.7);
   transform: translateY(-5px);
-}
-
-/* light */
-.light-theme {
-  --bg-color: white;
-  --text-color: black;
-}
-
-/* dark */
-.dark-theme {
-  --bg-color: black;
-  --text-color: white;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color;
 }
