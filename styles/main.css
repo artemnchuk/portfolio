@@ -199,8 +199,8 @@ h3 {
 }
 
 .skills-icons img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .works-section,
@@ -220,6 +220,9 @@ h3 {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .work-item img {
