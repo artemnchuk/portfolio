@@ -25,7 +25,7 @@ const themeBtn = document.getElementById("theme-btn");
 const themeIcon = document.getElementById("theme-icon");
 
 // check theme in LocalStorage
-const currentTheme = localStorage.getItem("theme") || "light";
+const currentTheme = localStorage.getItem("theme") || "dark";
 document.body.classList.add(`${currentTheme}-theme`);
 
 if (currentTheme === "dark") {
