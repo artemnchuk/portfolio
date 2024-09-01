@@ -67,7 +67,7 @@
 footer {
   text-align: center;
   padding: 20px;
-  background-color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 footer i {
