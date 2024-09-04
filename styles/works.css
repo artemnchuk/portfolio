@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+}
+
+header h1 {
+  color: #e91e63;
+  font-size: 3em;
+}
+
+/* Works Archive Grid */
+.works-archive {
+  padding: 40px;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.work-item {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.work-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.work-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.work-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.work-info p {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.tech-stack i {
+  font-size: 1.5em;
+  color: #e91e63;
+  margin-right: 10px;
+}
+
+.work-links {
+  margin-top: 10px;
+}
+
+.work-links a i {
+  font-size: 1.5em;
+  color: white;
+  transition: color 0.3s;
+}
+
+.work-links a i:hover {
+  color: #e91e63;
+}
+
+.work-item:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+}
+
+footer i {
+  color: red;
+}
