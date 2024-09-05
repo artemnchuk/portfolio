@@ -1,8 +1,8 @@
-// scripts/main.js
-document.getElementById("see-more").addEventListener("click", function () {
-  alert("Displaying more projects...");
-  //a
-});
+// // scripts/main.js
+// document.getElementById("see-more").addEventListener("click", function () {
+//   alert("Displaying more projects...");
+//   //a
+// });
 
 document
   .getElementById("contact-form")
