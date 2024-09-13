@@ -32,12 +32,25 @@ header {
   margin: 0 auto;
 }
 header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 24px;
   font-weight: bold;
   color: var(--text-color);
   text-shadow: 6px 8px 10px var(--text-color);
   border-bottom: 2px groove transparent;
   transition: 0.2s;
+}
+.logo img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.logo img:hover {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
 }
 header .logo:hover {
   color: var(--text-color);
