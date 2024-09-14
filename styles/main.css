@@ -195,9 +195,11 @@ h3 {
 .highlight {
   color: #da0707;
 }
-
+.highlight2 {
+  color: #3b8510;
+}
 .about-section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 4rem 0;
 }
 
@@ -242,9 +244,12 @@ h3 {
   transform: scale(1.2);
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.coming-soon {
+  width: 20px;
+}
 .works-section {
   padding: 4rem 0;
-  height: 90vh;
+  min-height: 90vh;
 }
 .contact-section {
   padding: 4rem 0;
@@ -252,27 +257,30 @@ h3 {
 
 .works-gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .work-item {
-  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 500px;
   background-color: var(--bg-color);
   box-shadow: 0 0 10px rgba(141, 141, 141, 0.5);
   padding: 1rem;
   border-radius: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .work-item img {
   border-radius: 10px;
 }
 
-#see-more {
-  margin-top: 2rem;
+.see-more {
+  margin: 2rem auto;
   background-color: var(--bg-color);
   padding: 0.75rem 2rem;
   background-color: transparent;
@@ -283,16 +291,16 @@ h3 {
   width: fit-content;
   transition: background-color 0.5s ease;
 }
-#see-more a {
+.see-more a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
 }
-#see-more:hover {
+.see-more:hover {
   background-color: #ff3748;
   color: var(--bg-color);
 }
-#see-more:active {
+.see-more:active {
   background-color: #ff0000;
   color: var(--bg-color);
 }
@@ -395,4 +403,13 @@ footer a {
 #theme-icon.fa-moon:hover {
   box-shadow: 0 0 50px 1px rgba(255, 255, 255, 0.7);
   transform: translateY(-5px);
+}
+@media screen and (max-width: 860px) {
+  .skills-icons .coming-soon {
+    display: none;
+  }
+  h2,
+  h3 {
+    text-align: center;
+  }
 }
