@@ -17,12 +17,17 @@ body {
   transition: background-color 0.3s ease, color;
   line-height: 1.6;
 }
+::selection {
+  background-color: var(--bg-color);
+  color: gold;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: var(--bg-color);
+  background-color: transparent;
   position: sticky;
   top: 0;
   z-index: 1;
