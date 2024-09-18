@@ -2,12 +2,14 @@
 .light-theme {
   --bg-color: white;
   --text-color: black;
+  --text-color-transparent: rgba(233, 233, 233, 0.342);
 }
 
 /* dark */
 .dark-theme {
   --bg-color: black;
   --text-color: white;
+  --text-color-transparent: rgba(36, 36, 36, 0.171);
 }
 
 body {
@@ -18,8 +20,10 @@ body {
   line-height: 1.6;
 }
 ::selection {
-  background-color: var(--bg-color);
+  background-color: var(--text-color-transparent);
   color: gold;
+  text-shadow: 3px 5px 10px rgba(255, 217, 0, 0.432);
+  transition: 0.15s ease-in-out;
 }
 
 header {
@@ -182,6 +186,14 @@ nav ul li a:active {
   box-shadow: 5px 5px 50px #ff0000d2;
 }
 
+.intro-buttons .btn::selection {
+  background-color: transparent;
+  border-color: var(--text-color);
+}
+.intro-buttons .btn:hover::selection {
+  background-color: #ff5a47;
+  border-color: var(--text-color);
+}
 .container {
   width: 85%;
   margin: 0 auto;
