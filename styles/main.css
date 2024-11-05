@@ -35,8 +35,16 @@ header .logo {
   font-size: 24px;
   font-weight: bold;
   color: var(--text-color);
+  text-shadow: 6px 8px 10px var(--text-color);
+  border-bottom: 2px groove transparent;
+  transition: 0.2s;
 }
-
+header .logo:hover {
+  color: var(--text-color);
+  text-shadow: 3px 4px 5px var(--text-color);
+  border-bottom: 2px groove var(--text-color);
+  transition: 0.2s;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -54,12 +62,19 @@ nav ul li a {
   background-color: #5a5a5a27;
   padding: 10px 20px;
   border-radius: 5px;
+  border: 2px groove transparent;
 }
 
 nav ul li a:hover {
   border-bottom: #da0707;
   border-bottom-style: groove;
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
+}
+nav ul li a:active {
+  border: 2px groove var(--text-color);
+  border-color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .intro {
